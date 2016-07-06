@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="edu.feicui.treasuremap.user.login.LoginActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_login"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:titleTextColor="@android:color/white" >
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:hint="请输入账号"
+            android:layout_marginTop="40dp"
+            android:id="@+id/et_username"
+            style="@style/AppTheme.EditText.Big"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="14dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="55dp"
+            android:drawableLeft="@drawable/selector_ic_person"/>
+        <EditText
+            style="@style/AppTheme.EditText.Big"
+            android:hint="请输入密码"
+            android:id="@+id/et_password"
+            android:layout_marginBottom="14dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="55dp"
+            android:layout_below="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawableLeft="@drawable/selector_ic_lock"/>
+        <TextView
+            android:id="@+id/tv_forgetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_Login"
+            android:layout_alignRight="@+id/btn_Login"
+            android:layout_marginBottom="6dp"
+            android:text="忘记密码?"
+            android:textColor="#c1a894"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_Login"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="260dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:enabled="false"
+            android:text="登陆"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
